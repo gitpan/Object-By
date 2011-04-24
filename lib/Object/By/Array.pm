@@ -28,8 +28,6 @@ sub same {
 	return($this);
 }
 
-#sub _init { @{shift} = @_ if ($#_ > 0);
-
 sub prototype {
 	return(bless([], shift));
 }

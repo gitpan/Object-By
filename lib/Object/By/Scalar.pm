@@ -24,25 +24,9 @@ sub same {
 
 sub P_VALUE() { 1 }
 sub _init {
-	${$_[THIS]} = $_[P_VALUE] if (exists($_[P_VALUE]));
+	${$_[THIS]} = scalar($_[P_VALUE]) if (exists($_[P_VALUE]));
 	return;
 }
-sub value {
-	return(${$_[THIS]});
-}
-sub set {
-	${$_[THIS]} = $_[P_VALUE];
-	return;
-};
-sub is_WNT {
-	return(${$_[THIS]} == $_[P_VALUE]);
-};
-sub is_WST {
-	return(${$_[THIS]} eq $_[P_VALUE]);
-};
-sub equals {
-	return(${$_[THIS]} == ${$_[P_VALUE]});
-};
 
 sub prototype {
 	my $value = undef;
@@ -54,5 +38,14 @@ sub clone {
 	my $clon = bless(\$value, ref($_[THIS]));
 	return($clon);
 }
+
+sub value {
+	return(${$_[THIS]});
+}
+
+sub set {
+	${$_[THIS]} = $_[P_VALUE];
+	return;
+};
 
 1;

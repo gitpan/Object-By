@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Object-By
-version:            v0.01
+version:            v0.02
 abstract:           ~
 author:
     - Winfried Trumper <pub+perl@wt.tuxomania.net>
