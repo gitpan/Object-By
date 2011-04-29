@@ -1,4 +1,5 @@
 package Object::By::Array;
+use 5.8.1;
 use strict;
 use warnings;
 

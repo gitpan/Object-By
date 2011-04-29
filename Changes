@@ -1,3 +1,6 @@
+0.04	29 April 2011
+	- use 5.8.1 because Internals:: was introduced then
+
 0.03	28 April 2011
 	- added basic tests
 
