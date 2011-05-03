@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Object-By
-version:            v0.04
+version:            v0.05
 abstract:           ~
 author:
     - Winfried Trumper <pub+perl@wt.tuxomania.net>
@@ -11,7 +11,8 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    perl:  
+    parent:  0.01
+    perl:    
 no_index:
     directory:
         - t
